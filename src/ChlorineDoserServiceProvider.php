@@ -14,8 +14,8 @@ class ChlorineDoserServiceProvider extends ServiceProvider
     public function boot()
     {
         // Load routes, migrations, views, etc.
-        $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
-        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
-        $this->loadViewsFrom(__DIR__.'/../resources/views', 'mypackage');
+        $this->loadRoutesFrom(__DIR__.'/routes/web.php');
+        $this->loadMigrationsFrom(__DIR__.'/database/migrations');
+        $this->loadViewsFrom(__DIR__.'/resources/views', 'chlorine-doser');
     }
 }

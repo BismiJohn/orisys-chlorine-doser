@@ -3,16 +3,22 @@
     "description": "Chlorine Dosing System Package",
     "type": "library",
     "autoload": {
-      "psr-4": {
-        "Orisys\\ChlorineDoser\\": "src/"
-      }
+        "psr-4": {
+            "Orisys\\ChlorineDoser\\": "src/"
+        }
     },
     "require": {},
+    "repositories": [
+        {
+            "type": "path",
+            "url": "./packages/Orisys/ChlorineDoser"
+        }
+    ],
     "extra": {
-      "laravel": {
-        "providers": [
-          "Orisys\\ChlorineDoser\\ChlorineDoserServiceProvider"
-        ]
-      }
+        "laravel": {
+            "providers": [
+                "Orisys\\ChlorineDoser\\ChlorineDoserServiceProvider"
+            ]
+        }
     }
-  }
+}
